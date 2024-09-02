@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Measurement Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Body Measurement Calculator</h1>
+    </header>
+    <main>
+        <section id="manual-input">
+            <h2>Manual Input</h2>
+            <form id="manual-form">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight">
+                <label for="chest-circumference">Chest Circumference (cm):</label>
+                <input type="number" id="chest-circumference" name="chest-circumference">
+                <label for="waist-circumference">Waist Circumference (cm):</label>
+                <input type="number" id="waist-circumference" name="waist-circumference">
+                <label for="hip-circumference">Hip Circumference (cm):</label>
+                <input type="number" id="hip-circumference" name="hip-circumference">
+                <button id="manual-submit">Submit</button>
+            </form>
+        </section>
+        <section id="image-upload">
+            <h2>Image Upload</h2>
+            <form id="image-form">
+                <input type="file" id="image-input" name="image-input">
+                <button id="image-submit">Submit</button>
+            </form>
+        </section>
+        <section id="results">
+            <h2>Results</h2>
+            <p id="tolerance-capacity"></p>
+            <p id="resistance-value"></p>
+            <p id="circuit-model"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
